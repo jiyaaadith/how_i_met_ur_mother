@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Met Your Mother</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('"C:\Users\aarya\OneDrive\Desktop\How_i _met_your_mothrr\photos\IMG_1240.JPG"') no-repeat center center fixed; 
+            background-size: cover;
+            color: #5a3e36;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header, footer {
+            background-color: rgba(139, 94, 60, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        header {
+            top: 0;
+        }
+        footer {
+            bottom: 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #8b5e3c;
+            font-weight: bold;
+        }
+        section {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .timeline {
+            list-style-type: none;
+            padding: 0;
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #8b5e3c;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline li {
+            padding: 10px 20px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            text-align: right;
+            left: 50%;
+        }
+        .timeline li:nth-child(odd) {
+            left: 0;
+            text-align: left;
+        }
+        .timeline li::after {
+            content: ' ';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -13px;
+            background-color: #8b5e3c;
+            border: 4px solid #8b5e3c;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline li:nth-child(odd)::after {
+            left: -13px;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="smooth-scroll">
+
+<header>
+    <h1>How I Met Your Mother</h1>
+</header>
+
+<nav>
+    <a href="#our-story">Our Story</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#photo-gallery">Photo Gallery</a>
+    <a href="#video-gallery">Video Gallery</a>
+    <a href="#messages">Messages</a>
+</nav>
+
+<section id="our-story" class="fade-in">
+    <h2>Our Story</h2>
+    <p>Ok so there's this girl I found cute and liked her vibes through her vlogs that she posts as Instagram stories. I first noticed her on Jan 28. On my birthday, Feb 10, to my surprise, the girl that I had a huge crush on decides to wish me. We've just seen each other on campus, never really talked. Today is Feb 27 and I see my life ahead with her. After she wished me, we've been talking ever since. We met for coffee on the 12th, then we went for a long walk in the evening. We went to the church and some other scenic spots another day. Last week we were together all the time. I have shared a lot of my life with her and she has too. She has told me about her family matters and so have I. We talked about the relationships that we want and also talked about how we both are like similar people; our interests align a lot. I genuinely think she can make me a better person in life and me vice versa...</p>
+    <!-- Add more of your story here -->
+</section>
+
+<section id="timeline" class="fade-in">
+    <h2>Timeline</h2>
+    <ul class="timeline">
+        <li><strong>Feb 10:</strong> Happy Birthday Aadith Chettoi</li>
+        <li><strong>Feb 12:</strong> Aditya Mess</li>
+        <li><strong>Feb 14:</strong> Valentine's Day</li>
+        <li><strong>Feb 18:</strong> Chai Cafe Walk</li>
+        <li><strong>Feb 19:</strong> Railway Bridge</li>
+        <li><strong>Feb 24:</strong> Opus</li>
+        <li><strong>March 2:</strong> Jiya's Birthday</li>
+    </ul>
+</section>
+
+<section id="photo-gallery" class="fade-in">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <img src="C:\Users\aarya\OneDrive\Desktop\How_i _met_your_mothrr\photos\DSC_0489.JPEG" alt="Cute photo 1">
+        <img src="C:\Users\aarya\OneDrive\Desktop\How_i _met_your_mothrr\photos\IMG_0975.JPG" alt="Cute photo 2">
+	<img src="C:\Users\aarya\OneDrive\Desktop\How_i _met_your_mothrr\photos\DSC_0489.JPEG" alt="Cute photo 3">
+	<img src="C:\Users\aarya\OneDrive\Desktop\How_i _met_your_mothrr\photos\IMG_2130.JPG" alt="Cute photo 4">
+    </div>
+</section>
+
+<section id="video-gallery" class="fade-in">
+    <h2>Video Gallery</h2>
+    <div class="gallery">
+        <video controls>
+            <source src="C:\Users\aarya\OneDrive\Desktop\EDITS\End Point\IMG_1132 (1).MOV">
+        </video>
+        <video controls>
+            <source src="C:\Users\aarya\OneDrive\Desktop\EDITS\End Point\IMG_1133.MOV" type="video/mp4"
+        </video>
+        <!-- Add more videos as needed -->
+    </div>
+</section>
+
+<section id="messages" class="fade-in">
+    <h2>Messages to Our Future Kids</h2>
+    <p>To Our Dearest Children,
+
+From the very moment we dreamed of you, our hearts have been filled with an overwhelming sense of love and anticipation. As your parents, we want to share with you a few things that we hold dear in our hearts.
+
+First and foremost, know that you are loved beyond measure. From the day you come into this world and every day after, our love for you will be unconditional and unwavering. You are a blessing in our lives, and we cherish every moment we get to spend with you.
+
+We hope you grow up knowing the value of kindness. Treat everyone you meet with compassion and respect. The world can be a challenging place, but with kindness and empathy, you can make it a little brighter and better.
+
+Dream big and never be afraid to pursue your passions. Whatever it is that sets your soul on fire, go after it with everything you've got. We will always be here to support you, to encourage you, and to cheer you on every step of the way.
+
+Remember to embrace the beauty in the small moments. Life is a collection of fleeting experiences, and sometimes the simplest of things can bring the greatest joy. Cherish the sunsets, the laughter shared with friends, and the quiet moments of reflection.
+
+Learn to forgive, both others and yourself. Mistakes are a part of life, and they help us grow. Holding onto anger or regret will only weigh you down. Forgiveness is a powerful tool that will help you move forward with a light heart.
+
+Family is everything. The bonds we share are unbreakable, and no matter where life takes you, you will always have a home with us. We are your biggest fans, your safe haven, and your eternal support system.
+
+Lastly, know that you are enough, just as you are. You don’t need to be perfect or fit into any mold. Be true to yourself, follow your heart, and live authentically. Your uniqueness is your greatest strength, and the world needs you just the way you are.
+
+With all our love,
+
+Mom and Dad
+
+</p>
+    <!-- Add more messages here -->
+</section>
+
+<section id="music-player" class="fade-in">
+    <h2>Our Favorite Songs</h2>
+    <audio controls>
+        <source src="path_to_your_favorite_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</section>
+
+<footer>
+    <p>Created with love by Achu and Jiya.</p>
+</footer>
+
+<script>
+    // JavaScript for smooth scrolling and animations
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Add fade-in animation to sections when they enter the viewport
+    const sections = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+</html>
